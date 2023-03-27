@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="arka">#EDE2E2</color>
+    <color name="butonrengi">#E9759D</color>
+    <color name="butonrengi2">#2196F3</color>
+    <color name="temelbuton">#4CAF50</color>
+    <color name="ortabuton">#FF9800</color>
+    <color name="zorbuton">#F32121</color>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE2E2"
+    tools:context=".KazandinActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="184dp"
+        android:layout_height="176dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextKazan"
+        app:srcCompat="@drawable/yes_picture" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="197dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/TextKazan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/smile_picture" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="65dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/win_picture" />
+
+    <TextView
+        android:id="@+id/TextKazan"
+        android:layout_width="350dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="276dp"
+        android:background="@drawable/cerceve1"
+        android:gravity="center"
+        android:text="KAZANDINIZ.."
+        android:textColor="#074209"
+        android:textSize="45sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/GeriDonBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />"
+
+    <Button
+        android:id="@+id/GeriDonBut"
+        android:layout_width="150dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/baslabutonrengi"
+        android:text="TEKRAR OYNA"
+        android:textColor="#FF000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CikisBut"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/CikisBut"
+        android:layout_width="150dp"
+        android:layout_height="79dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/zorbutonrengi"
+        android:text="ÇIKIŞ"
+        android:textColor="#FF000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="65dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/win_picture" />" />
+</androidx.constraintlayout.widget.ConstraintLayout>

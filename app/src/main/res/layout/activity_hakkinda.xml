@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE2E2"
+    tools:context=".HakkindaActivity">
+
+    <TextView
+        android:id="@+id/TextHakkinda"
+        android:layout_width="285dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="OYUN HAKKINDA:"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/TemelSeviye"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TemelSeviye"
+        android:layout_width="214dp"
+        android:layout_height="54dp"
+        android:background="@drawable/cerceve1"
+        android:text="Temel Seviye İçin:"
+        android:textColor="#673AB7"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TemelBir"
+        app:layout_constraintStart_toStartOf="@+id/TextHakkinda"
+        app:layout_constraintTop_toBottomOf="@+id/TextHakkinda" />
+
+    <TextView
+        android:id="@+id/TemelBir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-) Bilgisayar 0 ile 10 Arası Bir Sayı Belirler."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Temeliki"
+        app:layout_constraintStart_toStartOf="@+id/TemelSeviye"
+        app:layout_constraintTop_toBottomOf="@+id/TemelSeviye" />
+
+    <TextView
+        android:id="@+id/Temeliki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2-) Oyuncuya, Belirlenen Sayıyı Bulması İçin 5 Hak Verilir."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/TemelUc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TemelBir" />
+
+    <TextView
+        android:id="@+id/TemelUc"
+        android:layout_width="385dp"
+        android:layout_height="0dp"
+        android:text="3-) Eğer Tahminlerinden Biri Doğru İse Kazanır , Hepsi Yanlış İse Kaybeder."
+        android:textColor="#FF000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/OrtaSeviye"
+        app:layout_constraintStart_toStartOf="@+id/Temeliki"
+        app:layout_constraintTop_toBottomOf="@+id/Temeliki" />
+
+    <TextView
+        android:id="@+id/OrtaSeviye"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:background="@drawable/cerceve1"
+        android:gravity="center"
+        android:text="Orta Seviye İçin:"
+        android:textColor="#673AB7"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/OrtaBir"
+        app:layout_constraintStart_toStartOf="@+id/TemelUc"
+        app:layout_constraintTop_toBottomOf="@+id/TemelUc" />
+
+    <TextView
+        android:id="@+id/ZorUc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="125dp"
+        android:text="3-) Eğer Tahminlerinden Biri Doğru İse Kazanır, Hepsi Yanlış İse Kaybeder."
+        android:textColor="#FF000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Zoriki" />
+
+    <TextView
+        android:id="@+id/Ortaiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2-) Oyuncuya, Belirlenen Sayıyı Bulması İçin 5 Hak Verilir."
+        android:textColor="#FF000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/OrtaUc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrtaBir" />
+
+    <TextView
+        android:id="@+id/OrtaBir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-) Bilgisayar 0 ile 50 Arası Bir Sayı Belirler."
+        android:textColor="#FF000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Ortaiki"
+        app:layout_constraintStart_toStartOf="@+id/OrtaSeviye"
+        app:layout_constraintTop_toBottomOf="@+id/OrtaSeviye" />
+
+    <TextView
+        android:id="@+id/ZorSeviye"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/cerceve1"
+        android:gravity="center"
+        android:text="Zor Seviye İçin:"
+        android:textColor="#673AB7"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Zoriki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrtaUc" />
+
+    <TextView
+        android:id="@+id/ZorBir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="1-) Bilgisayar 0 ile 100 Arası Bir Sayı Belirler."
+        android:textColor="#FF000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Zoriki"
+        app:layout_constraintStart_toStartOf="@+id/ZorSeviye" />
+
+    <TextView
+        android:id="@+id/Zoriki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2-) Oyuncuya, Belirlenen Sayıyı Bulması İçin 5 Hak Verilir."
+        android:textColor="#FF000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ZorUc"
+        app:layout_constraintStart_toStartOf="@+id/ZorBir"
+        app:layout_constraintTop_toBottomOf="@+id/ZorSeviye" />
+
+    <TextView
+        android:id="@+id/OrtaUc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="3-) Eğer Tahminlerden Biri Doğru İse Kazanır, Hepsi Yanlış İse Kaybeder."
+        android:textColor="#FF000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ZorSeviye"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ortaiki" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="175dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/hakkindabutonrengi"
+        android:text="GERİ DÖN"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
